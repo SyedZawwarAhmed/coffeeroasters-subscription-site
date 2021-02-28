@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+:root {
+  --cyan: #0b858a;
+  --darker-cyan: #052b2c;
+  --dark-grey: #a1a5a5;
+  --coffee-brown: #e4a870;
+  --white: #f0f1f1;
+}
+
+body {
+  padding: 0 4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+}
+
+.btn {
+    font-family: "Fraunces", serif;
+    color: var(--white);
+    background-color: var(--cyan);
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
