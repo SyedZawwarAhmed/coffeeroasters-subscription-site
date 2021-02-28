@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .intro-title {
@@ -20,11 +20,7 @@
 }
 
 .intro-para {
-  color: var(--dark-grey);
+  color: var(--grey);
   width: 45ch;
-  margin-bottom: 3rem;
-}
-
-.btn {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
