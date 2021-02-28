@@ -1,0 +1,21 @@
+.nav {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  margin-left: 2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.links a {
+  color: var(--dark-grey);
+}
