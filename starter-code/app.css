@@ -10,6 +10,7 @@
   --darker-cyan: #052b2c;
   --grey: #a1a5a5;
   --dark-grey: #4a4b4b;
+  --light-grey: #bec5c5;
   --coffee-brown: #e4a870;
   --white: #f0f1f1;
 }
@@ -26,6 +27,7 @@ h3 {
 
 p {
   color: var(--dark-grey);
+  line-height: 1.5rem;
 }
 
 .btn {
