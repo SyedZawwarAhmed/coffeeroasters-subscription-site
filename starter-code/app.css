@@ -11,7 +11,7 @@
   --grey: #a1a5a5;
   --dark-grey: #4a4b4b;
   --light-grey: #bec5c5;
-  --coffee-brown: #e4a870;
+  --coffee-brown: #fdd6ba;
   --white: #f0f1f1;
 }
 
@@ -40,6 +40,7 @@ p {
 }
 
 .btn:hover {
+  color: var(--darker-cyan);
   background-color: var(--coffee-brown);
 }
 

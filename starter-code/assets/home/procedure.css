@@ -1,0 +1,65 @@
+.procedure {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.procedure-title {
+  font-size: 2rem;
+  color: var(--grey);
+}
+
+.bullets {
+  height: 2px;
+  width: 100%;
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.line {
+  position: relative;
+  background-color: var(--coffee-brown);
+  grid-column: 1/2;
+}
+
+.bullet {
+  position: absolute;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--cyan);
+  transform: translateY(-50%);
+}
+
+.bullet-2 {
+    left: 50%;
+}
+
+.bullet-3 {
+    left: 100%;
+}
+
+.procedure-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 5rem;
+}
+
+.procedure-card {
+  padding-right: 2.5rem;
+}
+
+.procedure-card h1 {
+    color: var(--coffee-brown);
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.procedure-card h3 {
+    color: var(--darker-cyan);
+    width: 10ch;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
