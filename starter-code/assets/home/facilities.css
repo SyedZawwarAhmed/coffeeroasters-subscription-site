@@ -1,3 +1,7 @@
+.facilities {
+  margin-bottom: 10rem;
+}
+
 .facility-intro {
   background-image: url(../plan/desktop/bg-steps.png);
   width: 100%;
@@ -24,7 +28,6 @@
 .facility-cards {
   margin: 0 auto;
   margin-top: -12rem;
-  margin-bottom: 10rem;
   display: flex;
   width: 60rem;
   gap: 1rem;
