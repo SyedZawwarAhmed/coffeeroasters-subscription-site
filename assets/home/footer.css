@@ -1,0 +1,4 @@
+.footer {
+    background-color: var(--dark-grey);
+    display: flex;
+}

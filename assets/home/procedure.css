@@ -1,6 +1,7 @@
 .procedure {
   width: 60rem;
   margin: 0 auto;
+  margin-bottom: 10rem;
 }
 
 .procedure-title {
@@ -33,11 +34,11 @@
 }
 
 .bullet-2 {
-    left: 50%;
+  left: 50%;
 }
 
 .bullet-3 {
-    left: 100%;
+  left: 100%;
 }
 
 .procedure-cards {
@@ -51,15 +52,15 @@
 }
 
 .procedure-card h1 {
-    color: var(--coffee-brown);
-    font-size: 4rem;
-    margin-bottom: 2.5rem;
+  color: var(--coffee-brown);
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .procedure-card h3 {
-    color: var(--darker-cyan);
-    width: 10ch;
-    font-size: 1.6rem;
-    font-weight: 900;
-    margin-bottom: 2.5rem;
+  color: var(--darker-cyan);
+  width: 10ch;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
 }
