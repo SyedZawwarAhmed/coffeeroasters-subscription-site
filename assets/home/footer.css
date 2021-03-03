@@ -1,4 +1,27 @@
+.footer-bg {
+  background-color: var(--dark-grey);
+  padding: 3rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
 .footer {
-    background-color: var(--dark-grey);
+    width: 60rem;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer li {
+    margin-left: 2rem;
+}
+
+.footer a {
+    color: var(--grey);
+    font-weight: 600;
 }
