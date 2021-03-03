@@ -24,6 +24,7 @@
 .facility-cards {
   margin: 0 auto;
   margin-top: -12rem;
+  margin-bottom: 10rem;
   display: flex;
   width: 60rem;
   gap: 1rem;
@@ -41,7 +42,11 @@
 }
 
 .facility-cards * {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.facility-img {
+  height: 50%;
 }
 
 .facility-card h3 {
