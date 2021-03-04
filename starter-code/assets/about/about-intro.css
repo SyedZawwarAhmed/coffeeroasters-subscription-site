@@ -1,0 +1,25 @@
+.intro-bg {
+    background-image: url(desktop/image-hero-whitecup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+  
+  .intro-title {
+    color: var(--white);
+    width: 10ch;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-para {
+    color: var(--grey);
+    width: 45ch;
+  }
