@@ -1,0 +1,14 @@
+.quality {
+    background-image: url(desktop/bg-quality.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    display: flex;
+}
+
+.quality-title {
+    color: var(--white);
+}
+
+.quality-img {
+}
