@@ -1,0 +1,27 @@
+.headquarters {
+  display: grid;
+  padding: 10rem 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title title"
+    "card1 card2 card3";
+}
+
+.title {
+  grid-area: title;
+  color: var(--grey);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.country {
+  color: var(--darker-cyan);
+}
+
+.headquarter img {
+  margin-bottom: 2rem;
+}
+
+.headquarter h3 {
+  margin-bottom: 1.5rem;
+}

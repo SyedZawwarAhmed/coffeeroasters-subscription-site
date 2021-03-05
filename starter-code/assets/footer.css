@@ -1,16 +1,17 @@
 .footer-bg {
   background-color: var(--dark-grey);
+  width: 100%;
   padding: 3rem;
   margin: auto;
   margin-bottom: 5rem;
 }
 
 .footer {
-    width: 60rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer ul {
@@ -18,10 +19,10 @@
 }
 
 .footer li {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .footer a {
-    color: var(--grey);
-    font-weight: 600;
+  color: var(--grey);
+  font-weight: 600;
 }
