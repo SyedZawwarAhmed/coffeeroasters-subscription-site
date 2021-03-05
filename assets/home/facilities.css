@@ -1,9 +1,12 @@
 .facilities {
+  width: 100%;
   margin-bottom: 10rem;
 }
 
 .facility-intro {
   background-image: url(../plan/desktop/bg-steps.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 30rem;
   padding-top: 5rem;
