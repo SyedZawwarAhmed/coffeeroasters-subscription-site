@@ -22,9 +22,10 @@ html,body {
 
 body {
   padding: 0 4rem;
-  /* display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 h1,
