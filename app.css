@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
+  max-width: 1440px;
 }
 
 :root {
@@ -15,8 +16,15 @@
   --white: #f0f1f1;
 }
 
+html,body {
+  max-width: 100%;
+}
+
 body {
   padding: 0 4rem;
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
 }
 
 h1,
