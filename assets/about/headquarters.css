@@ -1,5 +1,6 @@
 .headquarters {
   display: grid;
+  width: 100%;
   padding: 10rem 5rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
