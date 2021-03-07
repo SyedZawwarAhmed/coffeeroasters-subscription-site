@@ -1,0 +1,18 @@
+.procedure,
+.bullet {
+  background-image: url("desktop/bg-steps.png");
+}
+
+.procedure {
+  width: 100%;
+  padding: 0 5.5rem;
+  border-radius: 0.5rem;
+}
+
+.bullet {
+  background-size: auto;
+}
+
+.procedure-card h3 {
+    color: var(--white)
+}
