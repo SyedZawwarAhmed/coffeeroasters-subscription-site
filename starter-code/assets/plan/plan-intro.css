@@ -1,9 +1,10 @@
 .intro-bg {
-    background-image: url(desktop/image-hero-whitecup.jpg);
+    background-image: url(desktop/image-hero-blackcup.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 7rem 5rem;
+    padding: 8rem 5.5rem;
+    margin-bottom: 10rem;
     display: flex;
     align-items: center;
     border-radius: 0.8rem;
@@ -13,12 +14,13 @@
   .intro-title {
     color: var(--white);
     width: 10ch;
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 4rem;
     margin-bottom: 2rem;
   }
   
   .intro-para {
-    color: var(--light-grey);
+    color: var(--grey);
     width: 45ch;
   }
+  
