@@ -16,6 +16,10 @@
   --white: #f0f1f1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,body {
   max-width: 100%;
 }
