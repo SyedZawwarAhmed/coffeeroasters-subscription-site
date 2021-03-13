@@ -88,6 +88,7 @@ ul li:last-child .order-step::after {
 
 .order-summary h3 {
   color: white;
+  line-height: 1.6rem;
 }
 
 .order-summary span {
