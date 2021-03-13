@@ -1,8 +1,15 @@
 .order {
   width: 100%;
   padding: 0 5.5rem;
+  margin-bottom: 10rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.side-bar {
+  position: sticky;
+  align-self: start;
+  top: 5rem;
 }
 
 .order-step span {
@@ -24,7 +31,7 @@
   background-color: var(--light-grey);
   bottom: 0;
   left: 0;
-  width: 15rem;
+  width: 13rem;
   height: 1px;
 }
 
@@ -40,7 +47,7 @@ ul li:last-child .order-step::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "head head head" "card card card";
-  column-gap: 1rem;
+  column-gap: 1.5rem;
 }
 
 .order-options h1 {
@@ -50,7 +57,7 @@ ul li:last-child .order-step::after {
 }
 
 .order-card {
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 1.5rem 5rem;
   margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
@@ -60,6 +67,35 @@ ul li:last-child .order-step::after {
   margin-bottom: 1rem;
 }
 
+.order-card p {
+  color: var(--dark-grey);
+}
 
+.order-summary {
+  grid-column-start: 2;
+  background-image: url(mobile/bg-order-summary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+}
 
+.order-summary h4 {
+  color: var(--grey);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
 
+.order-summary h3 {
+  color: white;
+}
+
+.order-summary span {
+  color: var(--cyan);
+}
+
+.plan-btn {
+  grid-column: 2;
+  justify-self: right;
+  width: auto;
+}
