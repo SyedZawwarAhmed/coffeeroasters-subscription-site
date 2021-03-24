@@ -50,10 +50,38 @@ ul li:last-child .order-step::after {
   column-gap: 1.5rem;
 }
 
-.order-options h1 {
+.order-option-title {
   grid-area: head;
-  color: var(--grey);
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggler {
+  width: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.toggler-rotated {
+  transform: rotate(180deg);
+}
+
+.order-options h1 {
+  color: var(--grey);
+}
+
+.order-cards {
+  grid-area: card;
+  display: flex;
+  gap: 1rem;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+
+.collapsed {
+  max-height: 0;
 }
 
 .order-card {
@@ -61,6 +89,7 @@ ul li:last-child .order-step::after {
   margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
+  transition: max-height 0.3s linear;
 }
 
 .order-card h3 {
