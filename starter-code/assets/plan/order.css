@@ -89,7 +89,6 @@ ul li:last-child .order-step::after {
   margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
-  transition: max-height 0.3s linear;
 }
 
 .order-card h3 {
