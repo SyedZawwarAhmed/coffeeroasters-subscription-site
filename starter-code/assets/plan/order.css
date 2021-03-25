@@ -1,7 +1,7 @@
 .order {
   width: 100%;
   padding: 0 5.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
 }
@@ -89,6 +89,11 @@ ul li:last-child .order-step::after {
   margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
+}
+
+.order-card-selected {
+  color: var(--white);
+  background-color: var(--cyan);
 }
 
 .order-card h3 {
