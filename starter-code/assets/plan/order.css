@@ -61,6 +61,7 @@ ul li:last-child .order-step::after {
 .toggler {
   width: 1.3rem;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .toggler-rotated {
@@ -91,17 +92,21 @@ ul li:last-child .order-step::after {
   border-radius: 0.5rem;
 }
 
-.order-card-selected {
-  color: var(--white);
-  background-color: var(--cyan);
-}
-
 .order-card h3 {
   margin-bottom: 1rem;
 }
 
 .order-card p {
   color: var(--dark-grey);
+}
+
+.order-card-selected {
+  color: white;
+  background-color: var(--cyan);
+}
+
+.order-card-selected p {
+  color: var(--white);
 }
 
 .order-summary {
