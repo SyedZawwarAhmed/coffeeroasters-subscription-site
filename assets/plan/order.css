@@ -90,6 +90,11 @@ ul li:last-child .order-step::after {
   margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
 }
 
 .order-card h3 {
@@ -131,6 +136,10 @@ ul li:last-child .order-step::after {
 
 .order-summary span {
   color: var(--cyan);
+}
+
+#using-or-as {
+  color: white;
 }
 
 .plan-btn {
