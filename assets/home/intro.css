@@ -1,5 +1,9 @@
+:root {
+  --intro-bg: url(desktop/image-hero-coffeepress.jpg);
+}
+
 .intro-bg {
-  background-image: url(desktop/image-hero-coffeepress.jpg);
+  background-image: var(--intro-bg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -20,6 +24,21 @@
 
 .intro-para {
   color: var(--grey);
-  width: 45ch;
+  max-width: 45ch;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 778px) {
+  :root {
+    --intro-bg: url(tablet/image-hero-coffeepress.jpg)
+  }
+
+  .intro-bg {
+    /* background-size: contain; */
+    padding: 5rem 3rem;
+  }
+
+  .intro-title {
+    font-size: 3.2rem;
+  }
 }
