@@ -25,6 +25,7 @@
   flex-direction: column;
   width: 15rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .collection-card img {
@@ -36,4 +37,24 @@
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 778px) {
+  .collection-title {
+    font-size: 6rem;
+  }
+
+  .collection-cards {
+    flex-direction: column;
+  }
+
+  .collection-card {
+    flex-direction: row;
+    width: 70%;
+    text-align: left;
+  }
+
+  .collection-card img {
+    width: 15rem;
+  }
 }
