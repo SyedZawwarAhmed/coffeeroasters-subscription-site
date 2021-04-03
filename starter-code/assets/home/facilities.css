@@ -26,6 +26,7 @@
 .facility-intro p {
   color: var(--grey);
   width: 61ch;
+  max-width: 80%;
 }
 
 .facility-cards {
@@ -61,4 +62,11 @@
 
 .facility-card p {
   color: var(--light-grey);
+}
+
+@media screen and (max-width: 1110px) {
+  .facility-cards {
+    flex-direction: column;
+    width: 80%;
+  }
 }
