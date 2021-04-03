@@ -31,6 +31,7 @@
 }
 
 .collection-card img {
+  width: 20rem;
   margin-bottom: 3.5rem;
 }
 
@@ -44,11 +45,12 @@
 @media screen and (max-width: 1150px) {
   .collection-cards {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
   }
 
   .collection-card {
+    width: 70%;
     /* flex-direction: row; */
-    /* width: 70%; */
     /* text-align: left; */
   }
 
@@ -76,4 +78,12 @@
 }
 
 @media screen and (max-width: 778px) {
+  .collection-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card {
+    flex-direction: row;
+    text-align: left;
+  }
 }
