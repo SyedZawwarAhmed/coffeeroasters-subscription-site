@@ -21,7 +21,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  height: max(110%, 30rem);
+  height: max(150%, 30rem);
   border-radius: 0.5rem;
   z-index: -1;
 }
@@ -76,5 +76,20 @@
   .facility-cards {
     flex-direction: column;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  .facility-intro {
+    padding: 3rem;
+  }
+  .facility-intro p {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .facility-intro {
+    padding: 3rem 1rem;
   }
 }

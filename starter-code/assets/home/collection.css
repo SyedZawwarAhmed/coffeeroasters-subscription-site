@@ -8,9 +8,11 @@
 .collection-title {
   background-image: linear-gradient(to bottom, rgb(184, 184, 184), white);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
   text-align: center;
   font-size: 9rem;
+  word-wrap: break-word;
 }
 
 .collection-cards {
@@ -50,8 +52,6 @@
 
   .collection-card {
     width: 70%;
-    /* flex-direction: row; */
-    /* text-align: left; */
   }
 
   .collection-card img {
@@ -66,6 +66,10 @@
 }
 
 @media screen and (max-width: 1015px) {
+  .collection-cards {
+    margin-top: 0;
+  }
+
   .collection-title {
     font-size: 6rem;
   }
@@ -85,5 +89,22 @@
   .collection-card {
     flex-direction: row;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .collection-title {
+    font-size: 4rem;
+  }
+
+  .collection-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .collection-title {
+    font-size: 2.5rem;
   }
 }
