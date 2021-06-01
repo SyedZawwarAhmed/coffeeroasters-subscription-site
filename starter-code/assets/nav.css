@@ -30,3 +30,9 @@ nav {
   color: var(--darker-cyan);
   background-color: var(--coffee-brown);
 }
+
+@media screen and (max-width: 620px) {
+  .links {
+    display: none;
+  }
+}
