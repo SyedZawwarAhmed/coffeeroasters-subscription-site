@@ -1,13 +1,16 @@
 .commitment {
   padding: 10rem 5rem;
   display: flex;
-  align-items: center;
   gap: 5rem;
 }
 
 .commitment-img {
   height: 30rem;
   border-radius: 0.5rem;
+}
+
+.commitment-text {
+  align-self: center;
 }
 
 .commitment-title {

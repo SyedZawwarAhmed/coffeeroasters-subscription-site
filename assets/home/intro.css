@@ -69,3 +69,14 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .intro-bg {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro-title {
+    font-size: 2.5rem;
+  }
+} 
