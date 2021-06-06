@@ -1,12 +1,19 @@
 .commitment {
   padding: 10rem 5rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 5rem;
 }
 
 .commitment-img {
+  background-image: url(desktop/image-commitment.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 25rem;
+  width: 20rem; 
   height: 30rem;
   border-radius: 0.5rem;
+  margin: 0 auto;
 }
 
 .commitment-text {
@@ -16,4 +23,37 @@
 .commitment-title {
   color: var(--darker-cyan);
   margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .commitment {
+    padding: 10rem 0;
+    gap: 2.5rem;
+  }
+
+  .commitment-img {
+    background-image: url(tablet/image-commitment.jpg);
+    min-width: none;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .commitment {
+    grid-template-columns: 1fr;
+  }
+  
+  .commitment-img {
+    background-image: url(mobile/image-commitment.jpg);
+    height: 25rem;
+  }
+
+  .commitment-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .commitment-img {
+    width: 100%;
+  }
 }
