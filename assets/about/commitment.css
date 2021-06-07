@@ -40,6 +40,7 @@
 @media screen and (max-width: 798px) {
   .commitment {
     grid-template-columns: 1fr;
+    padding: 10rem 3rem;
   }
   
   .commitment-img {
@@ -50,6 +51,16 @@
   .commitment-text {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 540px) {
+  .commitment {
+    padding: 10rem 1rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  
 }
 
 @media screen and (max-width: 356px) {
