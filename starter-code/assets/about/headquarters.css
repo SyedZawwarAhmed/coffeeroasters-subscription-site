@@ -26,3 +26,26 @@
 .headquarter h3 {
   margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width: 798px) {
+  .headquarters {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .headquarters {
+    grid-template-areas:
+    "title title title"
+    "card1 card1 card1"
+    "card2 card2 card2"
+    "card3 card3 card3";
+
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .headquarters {
+    padding: 5rem 1rem;
+  }
+}
