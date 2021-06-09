@@ -1,5 +1,4 @@
 .quality {
-  position: relative;
   background-image: url(desktop/bg-quality.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,4 +58,7 @@
 }
 
 @media screen and (max-width: 376px) {
+  .quality img {
+    width: fit-content;
+  }
 }
