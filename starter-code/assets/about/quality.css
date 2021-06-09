@@ -12,7 +12,6 @@
 
 .quality div {
   margin-bottom: 5rem;
-  word-wrap: break-word;
 }
 
 .quality-title {
@@ -46,6 +45,10 @@
 }
 
 @media screen and (max-width: 798px) {
+  .quality-img {
+    height: 20rem;
+  }
+
   .quality {
     padding: 5rem 3rem;
   }
@@ -58,7 +61,7 @@
 }
 
 @media screen and (max-width: 376px) {
-  .quality img {
-    width: fit-content;
+  .quality-title {
+    font-size: 1.7rem;
   }
 }

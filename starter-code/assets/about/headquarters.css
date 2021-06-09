@@ -6,6 +6,7 @@
   grid-template-areas:
     "title title title"
     "card1 card2 card3";
+  gap: 2rem;
 }
 
 .title {
@@ -17,6 +18,18 @@
 
 .country {
   color: var(--darker-cyan);
+}
+
+.h1 {
+  grid-area: card1;
+}
+
+.h2 {
+  grid-area: card2;
+}
+
+.h3 {
+  grid-area: card3;
 }
 
 .headquarter img {
@@ -47,5 +60,10 @@
 @media screen and (max-width: 540px) {
   .headquarters {
     padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .headquarter {
+    margin: 0 auto;
   }
 }
