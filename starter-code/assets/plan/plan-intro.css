@@ -11,9 +11,14 @@
   overflow: hidden;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro-title {
   color: var(--white);
-  width: 10ch;
+  max-width: 10ch;
   font-size: 4rem;
   line-height: 4rem;
   margin-bottom: 2rem;
@@ -21,5 +26,49 @@
 
 .intro-para {
   color: var(--grey);
-  width: 45ch;
+  max-width: 45ch;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-bg {
+    background-image: url(tablet/image-hero-blackcup.jpg);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .intro-bg {
+    background-image: url(mobile/image-hero-blackcup.jpg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .intro-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .intro-bg {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .intro-bg {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro-title {
+    font-size: 2.5rem;
+  }
 }
