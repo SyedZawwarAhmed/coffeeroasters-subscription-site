@@ -61,6 +61,12 @@
   }
 }
 
+@media screen and (max-width: 455px) {
+  .intro-title {
+    font-size: 2.7rem;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .intro-bg {
     padding: 4rem 1rem;
