@@ -1,6 +1,6 @@
 .order {
-  width: 100%;
-  padding: 0 5.5rem;
+  width: min(960px, 100%);
+  padding: 0;
   margin-bottom: 15rem;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
@@ -46,7 +46,9 @@ ul li:last-child .order-step::after {
 .order-options {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "head head head" "card card card";
+  grid-template-areas:
+    "head head head"
+    "card card card";
   column-gap: 1.5rem;
 }
 
@@ -78,23 +80,22 @@ ul li:last-child .order-step::after {
   gap: 1rem;
   max-height: 500px;
   overflow: hidden;
-  transition: max-height 0.3s linear;
+  transition: 0.3s;
+  margin-bottom: 5rem;
 }
 
 .collapsed {
   max-height: 0;
+  margin-bottom: 0;
 }
 
 .order-card {
   padding: 2rem 1.5rem 5rem;
-  margin-bottom: 5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.order-card:hover {
+  margin-bottom: 0;
 }
 
 .order-card h3 {
@@ -115,7 +116,7 @@ ul li:last-child .order-step::after {
 }
 
 .order-summary {
-  grid-column-start: 2;
+  grid-column: 2;
   background-image: url(mobile/bg-order-summary.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,4 +147,58 @@ ul li:last-child .order-step::after {
   grid-column: 2;
   justify-self: right;
   width: auto;
+}
+
+@media screen and (max-width: 1144px) {
+  .order {
+    max-width: 750px;
+    grid-template-columns: 1fr;
+    margin-bottom: 10rem;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .order-summary {
+    grid-column: 1;
+  }
+
+  .plan-btn {
+    grid-column: 1;
+    justify-self: right;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 707px) {
+  .order-cards {
+    flex-direction: column;
+  }
+
+  .order-card, .order-summary {
+    padding: 2rem 1.5rem;
+  }
+
+  .plan-btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .order-option-title h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .order-option-title h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .order-option-title h1 {
+    font-size: 1.5rem;
+  }
 }

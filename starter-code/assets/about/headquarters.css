@@ -53,14 +53,13 @@
     "card1 card1 card1"
     "card2 card2 card2"
     "card3 card3 card3";
-
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 540px) {
   .headquarters {
     padding: 5rem 1rem;
-    text-align: center;
   }
 
   .headquarter {
