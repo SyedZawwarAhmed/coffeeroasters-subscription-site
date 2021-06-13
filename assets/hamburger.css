@@ -1,32 +1,7 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --w: 1.5rem;
-  --h: 0.2rem;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.hamburger {
-  width: var(--w);
-  height: 1rem
-}
-
 .bar {
   position: relative;
-  width: var(--w);
-  height: var(--h);
-  top: 0;
-  left: 70%;
-  margin: 3rem;
+  width: 1.5rem;
+  height: 0.2rem;
   background-color: black;
   z-index: 3;
 }
@@ -35,8 +10,8 @@ body {
 .bar::after {
   content: "";
   position: absolute;
-  width: var(--w);
-  height: var(--h);
+  width: 1.5rem;
+  height: 0.2rem;
   top: 200%;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -56,60 +31,57 @@ body {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   inset: 0;
   width: 100%;
   overflow: hidden;
+  z-index: -3;
 }
+
 .menu {
-  position: relative;
+  position: absolute;
   top: 5%;
-  left: 79%;
+  left: 95%;
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
   border-radius: 100%;
-  transition: 0.25s ease-out;
-  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.35s ease-out;
   overflow: hidden;
-  z-index: 2;
+  pointer-events: none;
 }
 
 .menu-expanded {
-  width: 130rem;
-  height: 130rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 180rem;
+  height: 180rem;
+  background-color: rgb(14, 135, 132, 0.7);
 }
 
-ul {
-  position: absolute;
+.hamburger-ul {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   list-style: none;
+  z-index: 3;
+  pointer-events: none;
 }
 
-ul li a {
+.hamburger-links {
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
   display: inline-block;
-  padding: 1rem 3rem;
   margin: 1rem;
-  color: #000;
-  /* background-color: rgb(204, 179, 70); */
+  color: #fff;
   border-radius: 0.4rem;  
-  transition: 0.2s;
+  transition: 0.3s;
   opacity: 0;
 }
 
 .visible {
   opacity: 1;
-}
-
-p {
-  transition: 0.4s;
-  padding: 0 5rem;
-  z-index: 1;
 }
 
 .blurred {
