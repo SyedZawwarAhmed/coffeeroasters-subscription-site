@@ -35,6 +35,8 @@ nav {
 
 .hamburger {
   display: none;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 620px) {
