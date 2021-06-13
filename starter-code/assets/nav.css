@@ -1,5 +1,7 @@
 nav {
   width: 100%;
+  z-index: 3;
+  background-color: #fff;
 }
 
 .nav {
@@ -31,8 +33,23 @@ nav {
   background-color: var(--coffee-brown);
 }
 
+.hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 620px) {
+  nav {
+    position: fixed;
+    top: 0;
+    padding: 0 2rem;
+  }
   .links {
     display: none;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
   }
 }

@@ -1,7 +1,7 @@
-const menu = document.getElementById("menu"),
+const menuContainer = document.getElementById("menu-container"), 
+menu = document.getElementById("menu"),
   hamburger = document.getElementById("hamburger"),
-  para = document.getElementById("para"),
-  links = document.getElementsByClassName("links");
+  links = document.getElementsByClassName("hamburger-links");
 
 let opened = false;
 
@@ -9,10 +9,12 @@ hamburger.addEventListener("click", () => {
   opened = opened === false ? true : false;
 
   if (opened) {
-    para.classList.toggle("blurred");
+    
     menu.classList.toggle("menu-expanded");
+    menuContainer.style.zIndex = "2"
 
     for (let i = 0; i < 3; i++) {
+      links[i].style.pointerEvents = "all";
       setTimeout(() => {
         links[i].classList.toggle("visible");
       }, 250);
@@ -20,10 +22,14 @@ hamburger.addEventListener("click", () => {
   } else {
     for (let i = 0; i < 3; i++) {
       links[i].classList.toggle("visible");
+      links[i].style.pointerEvents = "none";
     }
     setTimeout(() => {
-      para.classList.toggle("blurred");
       menu.classList.toggle("menu-expanded");
     }, 250);
+
+    setTimeout(() => {
+      menuContainer.style.zIndex = "-2";
+    }, 500);
   }
 });

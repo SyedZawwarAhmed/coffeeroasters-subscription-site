@@ -55,6 +55,12 @@
   }
 }
 
+@media screen and (max-width: 620px) {
+  .intro-bg {
+    margin-top: 91px;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .intro-bg {
     padding: 5rem 3rem;
