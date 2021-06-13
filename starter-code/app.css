@@ -80,7 +80,7 @@ li {
 }
 
 @media screen and (max-width: 500px) {
-  body {
+  body, nav {
     padding: 0 0.75rem;
   }
 }
