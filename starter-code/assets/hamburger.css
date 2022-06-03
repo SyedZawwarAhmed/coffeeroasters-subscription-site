@@ -19,13 +19,13 @@
   border-radius: 100%;
   transition: 0.35s ease-out;
   overflow: hidden;
-  pointer-events: none;
 }
 
 .menu-expanded {
   width: 180rem;
   height: 180rem;
   background-color: rgb(14, 135, 132, 0.7);
+  touch-action: none;
 }
 
 .hamburger-ul {
@@ -49,6 +49,7 @@
   border-radius: 0.4rem;  
   transition: 0.3s;
   opacity: 0;
+  touch-action: none;
 }
 
 .visible {

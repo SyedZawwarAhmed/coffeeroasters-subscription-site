@@ -7,7 +7,7 @@ const menuContainer = document.getElementById("menu-container"),
 let opened = false;
 
 hamburger.addEventListener("click", () => {
-  opened = opened === false ? true : false;
+  opened = !opened;
 
   if (opened) {
     hamburger.innerHTML =
